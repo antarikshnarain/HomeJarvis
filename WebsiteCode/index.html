@@ -1,0 +1,13 @@
+<html>
+<title>ABC</title>
+<body>
+	<?php
+   $con=mysqli_connect("arduinoyuniot.cwlgwf0etvez.ap-southeast-1.rds.amazonaws.com","arduinoyunpro","arduinoyunpro","iot");
+   $sql="INSERT INTO table1 (deviceid) VALUES (3)";
+   if (mysqli_query($con,$sql)) {
+      echo "Values have been inserted successfully";
+   }
+?>
+<h1>Hello World!</h1>
+</body>
+</html>
